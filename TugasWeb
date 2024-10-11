@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syahrul Bachtiar - Photographer</title>
+    <link rel="stylesheet" href="tugasweb.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="./Jpg/logo.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="intro">
+            <h1>I am Syahrul Bachtiar</h1>
+            <p>Hi, I'm Syahrul Bachtiar, a photographer and content creator</p>
+        </section>
+
+        <!-- Curved Section -->
+        <section class="curve"></section>
+
+        <!-- Image Gallery Section -->
+        <section class="gallery">
+            <h2>My Picture</h2>
+            <div class="image-grid">
+                <img src="./Jpg/WhatsApp Image 2024-10-01 at 20.22.51_7fc7135e.jpg" alt="Picture 1">
+                <img src="./Jpg/WhatsApp Image 2024-10-01 at 20.22.51_a8847e16.jpg" alt="Picture 2">
+                <img src="./Jpg/WhatsApp Image 2024-10-01 at 20.22.50_a6ffa158.jpg" alt="Picture 3">
+                <img src="./Jpg/WhatsApp Image 2024-10-01 at 20.22.50_aa96fde1.jpg" alt="Picture 4">
+                <img src="./Jpg/WhatsApp Image 2024-10-01 at 20.22.51_5fc32f45.jpg" alt="Picture 5">
+            </div>
+        </section>
+    </main>
+</body>
+</html>

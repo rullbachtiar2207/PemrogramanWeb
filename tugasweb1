@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syahrul Bachtiar - Photographer</title>
+    <link rel="stylesheet" href="tugasweb.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="intro">
+            <h1>I am Syahrul Bachtiar</h1>
+            <p>Hi, I'm Syahrul Bachtiar, a photographer and content creator</p>
+        </section>
+
+        <!-- Curved Section -->
+        <section class="curve"></section>
+
+        <!-- Image Gallery Section -->
+        <section class="gallery">
+            <h2>My Picture</h2>
+            <div class="image-grid">
+                <img src="./Jpg/Gambar4.jpg" alt="Picture 1">
+                <img src="./Jpg/Gambar5.jpg" alt="Picture 2">
+                <img src="./Jpg/Gambar1.jpg" alt="Picture 3">
+                <img src="./Jpg/Gambar2.jpg" alt="Picture 4">
+                <img src="./Jpg/Gambar3.jpg" alt="Picture 5">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Syahrul Bachtiar | Photographer & Content Creator</p>
+            <p>Follow me on:</p>
+            <div class="social-links">
+                <a href="http://instagram.com/rullbchtr" target="_blank">Instagram</a> | 
+                <a href="https://www.tiktok.com/@crfxbang?_t=8qEjDEabQ2B&_r=1" target="_blank">TikTok</a> | 
+                <a href="https://www.youtube.com/@rullbachtiar1525" target="_blank">YouTube</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
