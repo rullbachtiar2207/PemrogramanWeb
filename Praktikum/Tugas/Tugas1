@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone Style Calculator</title>
+  <link rel="stylesheet" href="iphone-calculator.css">
+</head>
+<body>
+  <div class="calculator">
+    <div id="display" class="display">0</div>
+
+    <div class="buttons">
+      <!-- Row 1 -->
+      <button class="button light-gray" onclick="clearDisplay()">AC</button>
+      <button class="button light-gray" onclick="negate()">±</button>
+      <button class="button light-gray" onclick="percentage()">%</button>
+      <button class="button orange" onclick="appendToDisplay('/')">÷</button>
+
+      <!-- Row 2 -->
+      <button class="button dark-gray" onclick="appendToDisplay('7')">7</button>
+      <button class="button dark-gray" onclick="appendToDisplay('8')">8</button>
+      <button class="button dark-gray" onclick="appendToDisplay('9')">9</button>
+      <button class="button orange" onclick="appendToDisplay('*')">×</button>
+
+      <!-- Row 3 -->
+      <button class="button dark-gray" onclick="appendToDisplay('4')">4</button>
+      <button class="button dark-gray" onclick="appendToDisplay('5')">5</button>
+      <button class="button dark-gray" onclick="appendToDisplay('6')">6</button>
+      <button class="button orange" onclick="appendToDisplay('-')">−</button>
+
+      <!-- Row 4 -->
+      <button class="button dark-gray" onclick="appendToDisplay('1')">1</button>
+      <button class="button dark-gray" onclick="appendToDisplay('2')">2</button>
+      <button class="button dark-gray" onclick="appendToDisplay('3')">3</button>
+      <button class="button orange" onclick="appendToDisplay('+')">+</button>
+
+      <!-- Row 5 -->
+      <button class="button dark-gray wide" onclick="appendToDisplay('0')">0</button>
+      <button class="button dark-gray" onclick="appendToDisplay('.')">.</button>
+      <button class="button orange" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <script src="iphone-calculator.js"></script>
+</body>
+</html>

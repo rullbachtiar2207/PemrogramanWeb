@@ -1,33 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Penjumlahan</title>
-<link rel="stylesheet" href="penjumlahan.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penjumlahan</title>
+  <link rel="stylesheet" href="penjumlahan.css">
 </head>
 <body>
   <div>
     <h1>PENJUMLAHAN</h1>
+
+    <!-- Input untuk Bilangan Pertama -->
     <label for="bilanganPertama">Bilangan pertama:</label>
     <input type="number" id="bilanganPertama" value="1"><br><br>
+
+    <!-- Input untuk Bilangan Kedua -->
     <label for="bilanganKedua">Bilangan kedua:</label>
     <input type="number" id="bilanganKedua" value="2"><br><br>
-    <button onclick="jumlahkan()">Jumlahkan</button>
-    <button onclick="reset()">Reset</button>
+
+    <!-- Tombol untuk menjumlahkan dan reset -->
+    <button id="jumlahkan-btn">Jumlahkan</button>
+    <button id="reset-btn">Reset</button>
+
+    <!-- Hasil dari penjumlahan -->
     <p>Hasil: <span id="hasil">3</span></p>
   </div>
 
+  <!-- Menyertakan file JavaScript -->
   <script>
-    function jumlahkan() {
+    document.getElementById('jumlahkan-btn').addEventListener('click', function() {
       let bilanganPertama = parseInt(document.getElementById("bilanganPertama").value);
       let bilanganKedua = parseInt(document.getElementById("bilanganKedua").value);
       document.getElementById("hasil").textContent = bilanganPertama + bilanganKedua;
-    }
+    });
 
-    function reset() {
+    document.getElementById('reset-btn').addEventListener('click', function() {
       document.getElementById("bilanganPertama").value = "";
       document.getElementById("bilanganKedua").value = "";
       document.getElementById("hasil").textContent = "";
-    }
+    });
   </script>
 </body>
 </html>
