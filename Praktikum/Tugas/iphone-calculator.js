@@ -7,7 +7,7 @@ function appendToDisplay(value) {
   const lastChar = display.innerText.slice(-1); // Karakter terakhir di tampilan
 
   // Daftar operator
-  const operators = ['+', '-', '*', '×', '/', '÷'];
+  const operators = ['+', '-', '*', '×', '/', '÷', '%', '^'];
 
   // Jika karakter terakhir adalah operator, ganti dengan operator baru
   if (operators.includes(lastChar) && operators.includes(value)) {
@@ -28,7 +28,7 @@ function calculate() {
   const lastChar = display.innerText.slice(-1); // Karakter terakhir
 
   // Daftar operator
-  const operators = ['+', '-', '*', '×', '/', '÷'];
+  const operators = ['+', '-', '*', '×', '/', '÷', '%', '^'];
 
   // Jika ekspresi berakhir dengan operator, hindari kalkulasi
   if (operators.includes(lastChar)) {
@@ -37,7 +37,12 @@ function calculate() {
 
   try {
     // Ganti simbol × dan ÷ untuk perhitungan
-    display.innerText = eval(display.innerText.replace('×', '*').replace('÷', '/'));
+    let expression = display.innerText.replace('×', '*').replace('÷', '/');
+
+    // Operasi pangkat (^) menjadi Math.pow()
+    expression = expression.replace(/\^/g, '**');
+
+    display.innerText = eval(expression); // Lakukan evaluasi perhitungan
   } catch (error) {
     display.innerText = 'Error'; // Tampilkan pesan kesalahan jika terjadi kesalahan
   }
